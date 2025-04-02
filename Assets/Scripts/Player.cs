@@ -13,6 +13,12 @@ public class Player : MonoBehaviour
     Vector2 minBounds; 
     Vector2 maxBounds;
 
+    Shooter shooter;
+
+    void Awake()
+    {
+        shooter = GetComponent<Shooter>();
+    }
     void Start()
     {
         InitBounds();
@@ -35,10 +41,20 @@ public class Player : MonoBehaviour
         rawInput = value.Get<Vector2>();
     }
 
+    void OnFire(InputValue value) //플레이어 발사 
+    {
+        if(shooter != null)
+        {
+            shooter.isFiring = value.isPressed;
+        }
+    }
+
     void InitBounds() 
     {
         Camera mainCamera = Camera.main;
         minBounds = mainCamera.ViewportToWorldPoint(new Vector2(0,0));
         maxBounds = mainCamera.ViewportToWorldPoint(new Vector2(1,1));
     }
+
+    
 }
