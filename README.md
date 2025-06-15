@@ -1,38 +1,27 @@
-# 🏂 Laser-Defender
+🚀 Laser-Defender
+Unity 2D 탄막 슈팅 게임
 
-<img src="mainmenu.PNG" width="600"/>
+🎮 게임 특징
+👾 적 우주선과 탄막 회피, 타격 메커니즘
 
-Unity 2D 횡스크롤 스노우보드 게임
-좌/우 방향키를 통해 캐릭터가 바닥에 머리가 충돌하지 않고 결승점 까지 무사히 골인 해야 하는 게임
+💥 스페이스바로 연속 발사되는 탄막 시스템
 
----
+🛰️ 좌우 방향키로 플레이어 우주선 조작
 
-## 🎮 기능
+🌌 우주 배경 속 몰입감 있는 전투 연출
 
-- 🏔️ S점프 메커니즘이 있는 부드러운 내리막 경사면
-- ❄️ 카툰 스타일 겨울 환경
-- 🎿 스노우보더 캐릭터 애니메이션
-- ⛷️ 물리학 기반의 움직임과 추진력
-- 🎵 배경음악 및 사운드 이펙트 
+🔊 박진감 넘치는 배경음악과 타격 사운드
 
----
+📸 플레이 스크린샷
+<img src="226bb58c-7914-41bb-8d62-5146128aae53.png" alt="Laser-Defender Screenshot" width="300"/>
+🎮 조작법
+← / → 방향키 : 플레이어 우주선 좌우 이동
 
-## 📸 플레이 영상
+Spacebar : 탄막(총알) 발사
 
-https://youtu.be/ei616F_wYBg
+🛠️ 개발 도구
+Engine: Unity 2D
 
----
+Language: C#
 
-## 🚀 조작법
-
-1. **좌/우 방향키**를 사용하여 캐릭터의 기울기 조절
-2. **윗 방향키**를 사용하여 가속
-
----
-
-## 🛠️ 개발 도구
-
-- **Engine**: Unity 2D
-- **Language**: C#
-- **Tools**: Unity Animator, Rigidbody2D, Tilemap
- 
+Tools: Unity Animator, Rigidbody2D, Tilemap, AudioSource
