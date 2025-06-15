@@ -1,5 +1,5 @@
 # 🚀 Laser-Defender
-<img src="LaserDefenderMain.PNG" width="600"/>
+<img src="LaserDefenderMain.PNG" width="300" height ="300"/>
 Unity 2D 탄막 슈팅 게임
 
 ## 🎮 게임 특징
