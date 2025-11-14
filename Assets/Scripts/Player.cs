@@ -4,16 +4,16 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {   
-    [SerializeField] float moveSpeed = 3f;
-    [SerializeField] float paddingLeft; 
-    [SerializeField] float paddingRight;
-    [SerializeField] float paddingTop;
-    [SerializeField] float paddingBottom;
-    Vector2 rawInput;
+    [SerializeField] float moveSpeed = 3f; // 이동 속도
+    [SerializeField] float paddingLeft;  // 화면 왼쪽 경계 여백
+    [SerializeField] float paddingRight; // 화면 오른쪽 경계 여백
+    [SerializeField] float paddingTop; // 위쪽 여백
+    [SerializeField] float paddingBottom; // 아래쪽 여백
+    Vector2 rawInput; // 입력값
     Vector2 minBounds; 
-    Vector2 maxBounds;
+    Vector2 maxBounds; 
 
-    Shooter shooter;
+    Shooter shooter; // 슈팅 스크립트 참조
 
     void Awake()
     {
@@ -36,19 +36,23 @@ public class Player : MonoBehaviour
         newPos.y = Mathf.Clamp(transform.position.y + delta.y, minBounds.y + paddingBottom, maxBounds.y - paddingTop);
         transform.position = newPos;
     }
-    void OnMove(InputValue value) //플레이어 조작
+
+    // Input System - 이동 입력
+    void OnMove(InputValue value) 
     {
         rawInput = value.Get<Vector2>();
     }
 
-    void OnFire(InputValue value) //플레이어 발사 
+    // Input System - 발사 입력
+    void OnFire(InputValue value)
     {
-        if(shooter != null)
+        if (shooter != null)
         {
             shooter.isFiring = value.isPressed;
         }
     }
-
+    
+    // 카메라 뷰 기준으로 이동 경계 계산
     void InitBounds() 
     {
         Camera mainCamera = Camera.main;

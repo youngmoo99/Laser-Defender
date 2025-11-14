@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Pathfinder : MonoBehaviour
 {   
-    EnemySpawner enemySpawner;
-    WaveConfigSO waveConfig;
-    List<Transform> waypoints;
-    int waypointIndex = 0;
+    EnemySpawner enemySpawner; // 현재 웨이브 정보 접근용
+    WaveConfigSO waveConfig; // 웨이브 데이터(적 프리팹, 속도 등)
+    List<Transform> waypoints; // 적 이동 경로
+    int waypointIndex = 0; // 현재 목표 웨이포인트 인덱스
 
     void Awake()
     {
@@ -15,17 +15,18 @@ public class Pathfinder : MonoBehaviour
     }
     void Start()
     {   
+        // 현재 웨이브의 이동 경로 불러오기
         waveConfig = enemySpawner.GetCurrentWave();
         waypoints = waveConfig.GetWaypoints();
         transform.position = waypoints[waypointIndex].position;    
     }
 
- 
     void Update()
     {
         FollowPath();
     }
 
+    // 적이 웨이포인트를 순서대로 이동하도록 제어
     void FollowPath()
     {
         if(waypointIndex < waypoints.Count)
