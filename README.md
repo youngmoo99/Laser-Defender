@@ -140,7 +140,7 @@ Packages 자동 복구 후, Assets/Scenes/Demo.unity 실행
 
 ---
 
-<h2 id="screenshots">🖼️ 스크린샷 / Screenshots</h2> <p align="center"> <img src="ea3fbbd0-6d5a-47b6-a2e0-6116be679c6c.png" width="720" alt="Laser Defender Gameplay"/> <img src="LaserDefender_MainMenu.png" width="320" alt="Laser Defender Main Menu"/> </p>
+<h2 id="screenshots">🖼️ 스크린샷 / Screenshots</h2> <p align="center"> <img src="LaserDefenderMain.PNG" width="720" alt="Laser Defender Gameplay"/> </p>
 
 플레이어의 레이저와 적의 탄막이 교차하며, 충돌 시 진동과 폭발 파티클이 동시에 발생합니다.
 이펙트와 사운드가 어우러진 박진감 넘치는 피드백이 핵심입니다.
