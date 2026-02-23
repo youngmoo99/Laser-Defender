@@ -177,5 +177,5 @@ Packages 자동 복구 후, Assets/Scenes/Demo.unity 실행
 <h2 id="contact">📬 연락처 / Contact</h2>
 
 * **이메일**: [rladuan612@gmail.com](mailto:rladuan612@gmail.com)
-* **포트폴리오**: [포트폴리오](https://www.naver.com)
+* **포트폴리오**: [포트폴리오](https://url.kr/udlyav)
 
